@@ -20,7 +20,7 @@ export default function NavBarContainer() {
             return (
               !item.type && (
                 <NavBar.ListItem>
-                  <NavBar.Link href={item.path}>{item.title}</NavBar.Link>
+                  <NavBar.Link to={item.path}>{item.title}</NavBar.Link>
                 </NavBar.ListItem>
               )
             );
@@ -38,7 +38,7 @@ export default function NavBarContainer() {
                 return (
                   item.type === "more" && (
                     <NavBar.ListItem>
-                      <NavBar.Link href={item.path}>{item.title}</NavBar.Link>
+                      <NavBar.Link to={item.path}>{item.title}</NavBar.Link>
                     </NavBar.ListItem>
                   )
                 );
