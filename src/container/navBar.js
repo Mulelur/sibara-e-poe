@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { NavBar } from "../components";
 import { NavData } from "../data/navData";
 import { MenuIcon } from "../icons/icons";
@@ -21,7 +20,7 @@ export default function NavBarContainer() {
             return (
               !item.type && (
                 <NavBar.ListItem>
-                  <Link to={item.path}>{item.title}</Link>
+                  <NavBar.Link href={item.path}>{item.title}</NavBar.Link>
                 </NavBar.ListItem>
               )
             );
@@ -39,7 +38,7 @@ export default function NavBarContainer() {
                 return (
                   item.type === "more" && (
                     <NavBar.ListItem>
-                      <Link to={item.path}>{item.title}</Link>
+                      <NavBar.Link href={item.path}>{item.title}</NavBar.Link>
                     </NavBar.ListItem>
                   )
                 );
