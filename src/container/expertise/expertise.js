@@ -18,7 +18,7 @@ export default function ExpertiseContainer() {
           In my free times I get busy with programming web application.
         </Expertise.Text>
       </Expertise.Content>
-      <Expertise.MMTitle>Manegment Matrix</Expertise.MMTitle>
+      <Expertise.MMTitle>Management Matrix</Expertise.MMTitle>
       <Expertise.MM>
         {MMData.map((item) => {
           return (
