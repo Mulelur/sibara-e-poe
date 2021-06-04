@@ -17,6 +17,9 @@ export const CvButton = styled.a`
   border-radius: 0.4rem;
   text-decoration: none;
 
+  @media (max-width: 320px) {
+    padding: 8px 15px;
+  }
   &:hover {
     background-color: #e65f78;
   }
