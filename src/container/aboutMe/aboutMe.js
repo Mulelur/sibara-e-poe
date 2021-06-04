@@ -26,10 +26,10 @@ export default function AboutMeContainer() {
         </AboutMe.Column>
       </AboutMe.Container>
       <AboutMe.Buttons>
-        <DownloadCVButton href={cv} target="_blank" download>
+        <DownloadCVButton href={cv} target="_blank">
           CV
         </DownloadCVButton>
-        <DownloadCVButton href={letter} target="_blank" download>
+        <DownloadCVButton href={letter} target="_blank">
           Cover Letter
         </DownloadCVButton>
       </AboutMe.Buttons>
