@@ -15,7 +15,7 @@ export default function ContactContainer() {
           <Contact.IconsItem>
             <PhoneIcon />
             <Contact.IconsTitle>Call Me On</Contact.IconsTitle>
-            <Contact.Text>+27 8222272566</Contact.Text>
+            <Contact.Text>+27 822272566</Contact.Text>
           </Contact.IconsItem>
           <Contact.IconsItem>
             <MailIcon />
