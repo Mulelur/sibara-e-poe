@@ -61,7 +61,7 @@ export const Buttons = styled.div`
   margin: 0 10rem;
   margin-bottom: 5rem;
   @media (max-width: 320px) {
-    margin: 0 3rem;
+    margin: 0 3.4rem;
     margin-bottom: 5rem;
   }
 `;
