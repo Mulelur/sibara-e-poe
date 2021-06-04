@@ -7,7 +7,7 @@ export default function SectionHeaderContainer() {
     <SectionHeader>
       <SectionHeader.Container>
         <SectionHeader.Heading4>Welcome</SectionHeader.Heading4>
-        <SectionHeader.Heading1>I'M A Softwer Engener</SectionHeader.Heading1>
+        <SectionHeader.Heading1>I'M A software engineer</SectionHeader.Heading1>
         <SectionHeader.Text>
           Productivity is never an accident. It’s always the result of a
           commitment to excellence, intelligent planning, and focused effort.
