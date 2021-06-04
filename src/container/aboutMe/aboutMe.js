@@ -2,6 +2,8 @@ import React from "react";
 import img from "../../assets/image-1.jpg";
 import { AboutMe } from "../../components";
 import { DownloadCVButton } from "../../components/buttons";
+import cv from "../../assets/cv/SIBARA.pdf";
+import letter from "../../assets/cv/SIBARAL.pdf";
 
 export default function AboutMeContainer() {
   return (
@@ -24,8 +26,12 @@ export default function AboutMeContainer() {
         </AboutMe.Column>
       </AboutMe.Container>
       <AboutMe.Buttons>
-        <DownloadCVButton>CV</DownloadCVButton>
-        <DownloadCVButton>Cover Letter</DownloadCVButton>
+        <DownloadCVButton href={cv} target="_blank" download>
+          CV
+        </DownloadCVButton>
+        <DownloadCVButton href={letter} target="_blank" download>
+          Cover Letter
+        </DownloadCVButton>
       </AboutMe.Buttons>
     </AboutMe>
   );

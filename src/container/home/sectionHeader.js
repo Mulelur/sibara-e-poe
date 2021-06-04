@@ -1,5 +1,6 @@
 import React from "react";
 import { SectionHeader } from "../../components";
+import cv from "../../assets/cv/SIBARA.pdf";
 
 export default function SectionHeaderContainer() {
   return (
@@ -11,7 +12,9 @@ export default function SectionHeaderContainer() {
           Productivity is never an accident. It’s always the result of a
           commitment to excellence, intelligent planning, and focused effort.
         </SectionHeader.Text>
-        <SectionHeader.Download>DownLoad CV</SectionHeader.Download>
+        <SectionHeader.Download href={cv} target="_blank" download>
+          DownLoad CV
+        </SectionHeader.Download>
       </SectionHeader.Container>
     </SectionHeader>
   );
