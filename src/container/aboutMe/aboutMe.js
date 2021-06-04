@@ -24,8 +24,8 @@ export default function AboutMeContainer() {
         </AboutMe.Column>
       </AboutMe.Container>
       <AboutMe.Buttons>
-        <DownloadCVButton>Download CV</DownloadCVButton>
-        <DownloadCVButton>Download Cover Letter</DownloadCVButton>
+        <DownloadCVButton>CV</DownloadCVButton>
+        <DownloadCVButton>Cover Letter</DownloadCVButton>
       </AboutMe.Buttons>
     </AboutMe>
   );
