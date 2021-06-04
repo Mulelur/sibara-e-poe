@@ -11,6 +11,14 @@ export const NavData = [
     title: "What i Do!",
     path: "/expertise",
   },
-  { type: "more", title: "Hobbies", path: "/hobbies" },
-  { type: "more", title: "Contact", path: "/contact" },
+  {
+    type: "more",
+    title: "Hobbies",
+    path: "/hobbies",
+  },
+  {
+    type: "more",
+    title: "Contact",
+    path: "/contact",
+  },
 ];
