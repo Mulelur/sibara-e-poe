@@ -27,12 +27,21 @@ export const Icons = styled.div`
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 725px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const IconsItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 20rem;
+  text-align: center;
+  @media (max-width: 725px) {
+    margin-top: 2rem;
+  }
 `;
 
 export const IconsTitle = styled.h3`
