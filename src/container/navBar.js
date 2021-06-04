@@ -5,6 +5,7 @@ import { MenuIcon } from "../icons/icons";
 
 export default function NavBarContainer() {
   const [toggel, setToggel] = useState(false);
+  const [toggelMenu, setToggelMenu] = useState(false);
   return (
     <NavBar>
       <NavBar.Container>
@@ -12,9 +13,49 @@ export default function NavBarContainer() {
           {/* <NavBar.Image  /> */}
           <NavBar.Logo>Sibara</NavBar.Logo>
         </NavBar.NavLink>
-        <NavBar.Menu>
+        <NavBar.Menu
+          onClick={(e) => {
+            setToggelMenu(!toggelMenu);
+          }}
+        >
           <MenuIcon />
         </NavBar.Menu>
+        {toggelMenu && (
+          <NavBar.DropDown>
+            {NavData.map((item) => {
+              return (
+                !item.type && (
+                  <NavBar.ListItem>
+                    <NavBar.NavLink to={item.path}>{item.title}</NavBar.NavLink>
+                  </NavBar.ListItem>
+                )
+              );
+            })}
+            <NavBar.ListItem
+              onClick={(e) => {
+                setToggel(!toggel);
+              }}
+            >
+              More
+            </NavBar.ListItem>
+            {toggel && (
+              <NavBar.DropDown>
+                {NavData.map((item) => {
+                  return (
+                    item.type === "more" && (
+                      <NavBar.ListItem>
+                        <NavBar.NavLink to={item.path}>
+                          {item.title}
+                        </NavBar.NavLink>
+                      </NavBar.ListItem>
+                    )
+                  );
+                })}
+              </NavBar.DropDown>
+            )}
+          </NavBar.DropDown>
+        )}
+
         <NavBar.List>
           {NavData.map((item) => {
             return (
