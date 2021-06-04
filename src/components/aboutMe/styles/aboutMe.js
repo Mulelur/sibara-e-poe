@@ -57,7 +57,7 @@ export const Text = styled.p`
   margin-bottom: 1rem;
 `;
 
-export const Buttons = styled.button`
+export const Buttons = styled.div`
   margin: 0 10rem;
   margin-bottom: 5rem;
   padding: none;

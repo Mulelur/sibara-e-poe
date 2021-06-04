@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { primaryColor } from "../../../colors/colors";
 
-export const CvButton = styled.button`
+export const CvButton = styled.a`
   background-color: ${primaryColor};
   padding: 15px 32px;
   font-size: 14px;
@@ -15,10 +15,11 @@ export const CvButton = styled.button`
   margin: 1rem;
   border: none;
   border-radius: 0.4rem;
+  text-decoration: none;
 
   &:hover {
     background-color: #e65f78;
   }
 `;
 
-export const LatterButton = styled.button``;
+export const LatterButton = styled.a``;
