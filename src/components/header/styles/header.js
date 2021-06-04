@@ -10,6 +10,8 @@ export const Container = styled.div`
   background-size: cover;
   height: 35rem;
   color: #ffff;
+  background-position: center;
+  background-size: auto;
 `;
 
 export const Title = styled.div``;
