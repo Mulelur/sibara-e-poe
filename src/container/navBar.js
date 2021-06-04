@@ -8,10 +8,10 @@ export default function NavBarContainer() {
   return (
     <NavBar>
       <NavBar.Container>
-        <NavBar.Link>
+        <NavBar.NavLink>
           {/* <NavBar.Image  /> */}
           <NavBar.Logo>Sibara</NavBar.Logo>
-        </NavBar.Link>
+        </NavBar.NavLink>
         <NavBar.Menu>
           <MenuIcon />
         </NavBar.Menu>
@@ -20,7 +20,7 @@ export default function NavBarContainer() {
             return (
               !item.type && (
                 <NavBar.ListItem>
-                  <NavBar.Link to={item.path}>{item.title}</NavBar.Link>
+                  <NavBar.NavLink to={item.path}>{item.title}</NavBar.NavLink>
                 </NavBar.ListItem>
               )
             );
@@ -38,7 +38,9 @@ export default function NavBarContainer() {
                 return (
                   item.type === "more" && (
                     <NavBar.ListItem>
-                      <NavBar.Link to={item.path}>{item.title}</NavBar.Link>
+                      <NavBar.NavLink to={item.path}>
+                        {item.title}
+                      </NavBar.NavLink>
                     </NavBar.ListItem>
                   )
                 );

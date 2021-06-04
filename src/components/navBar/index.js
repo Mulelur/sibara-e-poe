@@ -2,7 +2,7 @@ import React from "react";
 import {
   Nav,
   Container,
-  Link,
+  NavLink,
   List,
   ListItem,
   Image,
@@ -19,8 +19,8 @@ NavBar.Container = function NavBarContainer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 };
 
-NavBar.Link = function NavBarLink({ children, ...restProps }) {
-  return <Link {...restProps}>{children}</Link>;
+NavBar.NavLink = function NavBarNavLink({ children, ...restProps }) {
+  return <NavLink {...restProps}>{children}</NavLink>;
 };
 
 NavBar.Image = function NavBarImage({ ...restProps }) {
